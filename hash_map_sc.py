@@ -1,14 +1,11 @@
-# Name:         Joshua Harris
-# OSU Email:    harrijo7@oregonstate.edu
-# Course:       CS261 - Data Structures Section 403
-# Assignment:   Assignment 6 - HashMap Implementation
-# Due Date:     6/3/2022
+# Name:         Josh Harris
+# Course:       Data Structures
 # Description:  The program represents an implementation of the HashMap using
 #               chaining to resolve collisions
 
 
-from a6_include import (DynamicArray, LinkedList,
-                        hash_function_1, hash_function_2)
+from hashmap_helpers import (DynamicArray, LinkedList,
+                             hash_function_1, hash_function_2)
 
 
 class HashMap:
@@ -16,7 +13,6 @@ class HashMap:
         """
         Initialize new HashMap that uses
         separate chaining for collision resolution
-        DO NOT CHANGE THIS METHOD IN ANY WAY
         """
         self._buckets = DynamicArray()
         for _ in range(capacity):
@@ -29,7 +25,6 @@ class HashMap:
     def __str__(self) -> str:
         """
         Override string method to provide more readable output
-        DO NOT CHANGE THIS METHOD IN ANY WAY
         """
         out = ''
         for i in range(self._buckets.length()):
@@ -39,14 +34,12 @@ class HashMap:
     def get_size(self) -> int:
         """
         Return size of map
-        DO NOT CHANGE THIS METHOD IN ANY WAY
         """
         return self._size
 
     def get_capacity(self) -> int:
         """
         Return capacity of map
-        DO NOT CHANGE THIS METHOD IN ANY WAY
         """
         return self._capacity
 
@@ -168,8 +161,7 @@ def find_mode(da: DynamicArray) -> (DynamicArray, int):
     :param da: The specified Dynamic Array
     :return: A tuple containing an array with the mode value(s), and the frequency
     """
-    # if you'd like to use a hash map,
-    # use this instance of your Separate Chaining HashMap
+    # Use HashMap to track frequency of values
     map = HashMap(da.length() // 3, hash_function_1)
 
     mode_array, mode_freq = DynamicArray(), 0
