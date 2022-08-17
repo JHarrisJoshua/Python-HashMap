@@ -9,107 +9,17 @@
 ## Overview
 Data Structures Portfolio Project - Implementation of a HashMap two ways - i) Chaining and ii) Open Addressing with Quadratic Probing
 
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-
 ## Chaining
-
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-
-
-
-
-
-
+### Description
+The first implementation of the HashMap uses chaining for collision resolution. The underlying data structure uses a dynamic array to store the hash table, with singly linked lists to facilitate   
+### Methods 
 
 
 
 ## Open Addressing with Quadratic Probing 
 
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-
-
-
-
-
-
-
-
-
 
 ## Continuous Integration Workflow and Testing
-
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-
-
-
-
-
-
-
 
 
 ## Sources Cited
