@@ -1,9 +1,9 @@
+"""
 # Name:         Josh Harris
 # Course:       Data Structures
 # Description:  The program represents an implementation of the HashMap using open
 #               addressing with quadratic probing to resolve collisions
-
-
+"""
 from hashmap_helpers import (DynamicArray, HashEntry,
                              hash_function_1, hash_function_2)
 
