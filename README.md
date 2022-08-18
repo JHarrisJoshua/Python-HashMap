@@ -23,7 +23,7 @@ The second implementation of the HashMap uses open addressing for collision reso
 
 ## Continuous Integration Workflow and Testing
 ### Overview
-A Continuous Integration Workflow was implemented using GitHub actions. While the original project was tested using basic testing, tests were converted into a testing suite to be used for the workflow. As part of the CI workflow, branch protections were implemented for the main branch to prevent new commits from being pushed to main without triggering the workflow and passing the testing suite(includes linting). Once the testing suite is passed, a branch can be pulled into main via a pull request, which would require a code review if there were multiple people working on the projects.   
+A Continuous Integration Workflow was implemented using GitHub actions. While the original project was tested using basic testing, tests were converted into a testing suite to be used for the workflow. As part of the CI workflow, branch protections were implemented for the main branch to prevent new commits from being pushed to main without triggering the workflow and passing the testing suite(includes linting). Once the testing suite is passed, a branch can be pulled into main via a pull request, which would require a code review if there were multiple people working on the project.   
 
 ### Sample Workflow
 While the original project did not follow a continuous integration workflow, if I were to start the project again, I would implement a continuous integration workflow as follows:
