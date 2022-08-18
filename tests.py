@@ -2,7 +2,7 @@
 # Name:         Josh Harris
 # Course:       Data Structures
 # Description:  HashMap testing for Continuous Integration workflow
-#               CI workflow implemented using GitHub Actions
+#               CI workflow implemented using GitHub Actions.
 """
 
 import unittest
