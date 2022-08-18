@@ -11,7 +11,8 @@ Data Structures Portfolio Project - Implementation of a HashMap two ways - i) Ch
 
 ## Chaining
 ### Description
-The first implementation of the HashMap uses chaining for collision resolution. The underlying data structure uses a dynamic array to store the hash table, and singly linked lists are used to accomodate multiple keys that share the same hash table entry.    
+The first implementation of the HashMap uses chaining for collision resolution. The underlying data structure uses a dynamic array to store the hash table. Singly linked lists are used to accomodate keys that share the same hash table entry.
+
 ### Methods 
 
 
