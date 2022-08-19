@@ -22,3 +22,7 @@ class TestCase(unittest.TestCase):
     def test_oa_1(self):
         """Test case 1 for Open Addressing."""
         self.assertTrue(True)
+
+
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
