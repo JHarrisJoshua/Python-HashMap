@@ -72,17 +72,17 @@ class TestCaseSC1(unittest.TestCase):
     def test_sc_contains_1(self):
         """Single Chaining -  Contains example 1"""
         m = self.hash_map
-        self.assertFalse(m.contains_key('key1'), msg=f"Expected False, got True")
+        self.assertFalse(m.contains_key('key1'), msg="Expected False, got True")
         m.put('key1', 10)
         m.put('key2', 20)
         m.put('key3', 30)
         m.put('key4', 40)
 
-        self.assertTrue(m.contains_key('key1'), msg=f"Expected True, got False")
-        self.assertFalse(m.contains_key('key5'), msg=f"Expected False, got True")
-        self.assertTrue(m.contains_key('key3'), msg=f"Expected True, got False")
+        self.assertTrue(m.contains_key('key1'), msg="Expected True, got False")
+        self.assertFalse(m.contains_key('key5'), msg="Expected False, got True")
+        self.assertTrue(m.contains_key('key3'), msg="Expected True, got False")
         m.remove('key3')
-        self.assertFalse(m.contains_key('key3'), msg=f"Expected False, got True")
+        self.assertFalse(m.contains_key('key3'), msg="Expected False, got True")
 
     def test_sc_remove_1(self):
         """Single Chaining -  Remove example 1"""
@@ -213,7 +213,7 @@ class TestCaseSC5(unittest.TestCase):
             result &= m.contains_key(str(key))
             # NOT inserted keys must be absent
             result &= not m.contains_key(str(key + 1))
-        self.assertTrue(result, msg=f"Expected True, got False")
+        self.assertTrue(result, msg="Expected True, got False")
 
 
 class TestCaseSC6(unittest.TestCase):
@@ -329,11 +329,11 @@ class TestCaseOA1(unittest.TestCase):
         m.put('key3', 30)
         m.put('key4', 40)
 
-        self.assertTrue(m.contains_key('key1'), msg=f"Expected True, got False")
-        self.assertFalse(m.contains_key('key5'), msg=f"Expected False, got True")
-        self.assertTrue(m.contains_key('key3'), msg=f"Expected True, got False")
+        self.assertTrue(m.contains_key('key1'), msg="Expected True, got False")
+        self.assertFalse(m.contains_key('key5'), msg="Expected False, got True")
+        self.assertTrue(m.contains_key('key3'), msg="Expected True, got False")
         m.remove('key3')
-        self.assertFalse(m.contains_key('key3'), msg=f"Expected False, got True")
+        self.assertFalse(m.contains_key('key3'), msg="Expected False, got True")
 
     def test_oa_remove_1(self):
         """Open Addressing -  Remove example 1"""
@@ -481,7 +481,7 @@ class TestCaseOA5(unittest.TestCase):
             result &= m.contains_key(str(key))
             # NOT inserted keys must be absent
             result &= not m.contains_key(str(key + 1))
-        self.assertTrue(result, msg=f"Expected True, got False")
+        self.assertTrue(result, msg="Expected True, got False")
 
 
 class TestCaseOA6(unittest.TestCase):
