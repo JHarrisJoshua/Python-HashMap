@@ -323,7 +323,7 @@ class TestCaseOA1(unittest.TestCase):
     def test_oa_contains_1(self):
         """Open Addressing - Contains example 1"""
         m = self.hash_map
-        self.assertFalse(m.contains_key('key1'), msg=f"Expected False, got True")
+        self.assertFalse(m.contains_key('key1'), msg="Expected False, got True")
         m.put('key1', 10)
         m.put('key2', 20)
         m.put('key3', 30)
