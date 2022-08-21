@@ -20,6 +20,7 @@ class HashMap:
 
         self._capacity = capacity
         self._hash_function = function
+        self._hash_function1 = hash_function_2
         self._size = 0
 
     def __str__(self) -> str:
@@ -152,6 +153,15 @@ class HashMap:
             for node in self._buckets[idx]:
                 result_array.append(node.key)
         return result_array
+
+    def get_hash_function(self) -> str:
+        """
+        The method returns the current hash function used by the hash map
+        """
+        if self._hash_function is hash_function_1:
+            return "Hash function 1"
+        if self._hash_function is hash_function_2:
+            return "Hash function 2"
 
 
 def find_mode(da: DynamicArray) -> (DynamicArray, int):

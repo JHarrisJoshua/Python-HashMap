@@ -192,3 +192,12 @@ class HashMap:
         :return: The hash array
         """
         return self._buckets
+
+    def get_hash_function(self) -> str:
+        """
+        The method returns the current hash function used by the hash map
+        """
+        if self._hash_function is hash_function_1:
+            return "Hash function 1"
+        if self._hash_function is hash_function_2:
+            return "Hash function 2"

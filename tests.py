@@ -6,10 +6,12 @@
 """
 
 import unittest
+import hash_map_sc
+import hash_map_oa
 
 
 class TestCase(unittest.TestCase):
-    """Test cases for Hashmap"""
+    """Test cases for Hashmap Implementation"""
 
 # -------------- Single Chaining  -------------- #
 
