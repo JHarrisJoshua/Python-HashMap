@@ -6,11 +6,11 @@
 """
 
 import unittest
-import hash_map_sc
-import hash_map_oa
+# import hash_map_sc
+# import hash_map_oa
 
 
-class TestCase(unittest.TestCase):
+class TestCase1(unittest.TestCase):
     """Test cases for Hashmap Implementation"""
 
 # -------------- Single Chaining  -------------- #
@@ -21,7 +21,23 @@ class TestCase(unittest.TestCase):
 
 # -------------- Open Addressing  -------------- #
 
+    def test_sc_2(self):
+        """Test case 1 for Open Addressing."""
+        self.assertTrue(True)
+
+
+class TestCase2(unittest.TestCase):
+    """Test cases for Hashmap Implementation"""
+
+# -------------- Single Chaining  -------------- #
+
     def test_oa_1(self):
+        """Test case 1 for Single Chaining."""
+        self.assertTrue(True)
+
+# -------------- Open Addressing  -------------- #
+
+    def test_oa_2(self):
         """Test case 1 for Open Addressing."""
         self.assertTrue(True)
 
