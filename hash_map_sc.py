@@ -2,7 +2,7 @@
 # Name:         Josh Harris
 # Course:       Data Structures
 # Description:  The program represents an implementation of the HashMap using
-#               chaining to resolve collisions
+#               chaining to resolve collisions.
 """
 from hashmap_helpers import (DynamicArray, LinkedList,
                              hash_function_1, hash_function_2)
