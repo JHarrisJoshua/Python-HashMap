@@ -2,7 +2,7 @@
 # Name:         Josh Harris
 # Course:       Data Structures
 # Description:  The program represents an implementation of the HashMap using
-#               chaining to resolve collisions
+#               chaining to resolve collisions.
 """
 from hashmap_helpers import (DynamicArray, LinkedList,
                              hash_function_1, hash_function_2)
@@ -11,7 +11,7 @@ from hashmap_helpers import (DynamicArray, LinkedList,
 class HashMap:
     def __init__(self, capacity: int, function) -> None:
         """
-        Initialize new HashMap that uses
+        Initialize a new HashMap that uses
         separate chaining for collision resolution
         """
         self._buckets = DynamicArray()
