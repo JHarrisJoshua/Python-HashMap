@@ -11,8 +11,8 @@ from hashmap_helpers import (DynamicArray, LinkedList,
 class HashMap:
     def __init__(self, capacity: int, function) -> None:
         """
-        Initialize new HashMap that uses
-        separate chaining for collision resolution
+        Initialize new HashMap that uses a
+        separate chaining for collision resolution.
         """
         self._buckets = DynamicArray()
         for _ in range(capacity):
